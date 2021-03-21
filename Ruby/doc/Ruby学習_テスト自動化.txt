@@ -1,0 +1,51 @@
+
+--------------------------------------------------------------------------------------------------------------------------------
+■2021/03/21(sun)
+【Minitest】
+・テスティングフレームワークの一つ
+
+  （自動化の手順）
+  ①テストコードを書く（テスティングフレームワークに従って）
+  ②テストコードを実行
+  ③実行結果をチェック
+
+  ###########################
+  # 実行結果(成功例)
+  ###########################
+  USERnoMacBook-ea:lib user$ ruby manitest_sample.rb
+  Run options: --seed 61023
+
+  # Running:
+
+  .
+
+  Finished in 0.000922s, 1084.5987 runs/s, 1084.5987 assertions/s.
+
+  1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
+
+　→
+　runs：実行したテストメソッドの件数
+　assertions：実行した検証メソッドの件数
+　failures：検証に失敗したテストメソッドの件数
+　errors：検証中にエラーが発生したテストメソッドの件数
+　skips：skipメソッドにより実行をスキップされたテストメソッドの件数
+
+  ###########################
+  # 実行結果(失敗例)
+  ###########################
+  USERnoMacBook-ea:lib user$ ruby minitest_sample.rb
+  Run options: --seed 19205
+
+  # Running:
+
+  F　←失敗(Failure)のF
+
+  Finished in 0.001005s, 995.0249 runs/s, 995.0249 assertions/s.
+
+  1) Failure:
+  SampleTest#test_sample [minitest_sample.rb:6]: ←６行目で失敗した
+  Expected: "RUBY"　←期待結果
+  Actual: "Ruby"　←実際の値
+
+  1 runs, 1 assertions, 1 failures, 0 errors, 0 skips
+  USERnoMacBook-ea:lib user$
