@@ -9,13 +9,3 @@ def fizz_buzz(n)
     n.to_s
   end
 end
-
-require 'minitest/autorun'
-
-class SampleTest < Minitest::Test
-  def test_fizz_buzz
-    assert_equal '1', fizz_buzz(1)
-    assert_equal '2', fizz_buzz(2)
-    assert_equal 'Fizz', fizz_buzz(3)
-  end
-end
