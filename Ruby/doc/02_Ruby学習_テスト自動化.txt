@@ -49,3 +49,12 @@
 
   1 runs, 1 assertions, 1 failures, 0 errors, 0 skips
   USERnoMacBook-ea:lib user$
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+■2021/03/25(thu)
+・RubyのテスティングフレームワークにはMinitest以外にRSpecがある
+・Rspecは独自のDSL(ドメイン固有言語)を使って書く
+・Rspec以外にはtest-unitがある
+・Minitestとtest-unitはRubyインストール時にデフォルトでインストールされる
+・Rspecは別途gemでのインストールが必要となる
