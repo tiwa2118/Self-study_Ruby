@@ -172,3 +172,26 @@
     => [1, 2, 3, 4, 5]
     irb(main):006:0> sum = numbers.inject(0) {|result, n| result + n}
     => 15
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+■2021/04/03(sat)
+【Range（範囲）】
+・「..」と「...」の違いは最後の値を含むか、含まないか
+
+  ####
+  irb(main):012:0> range = 1...5
+  => 1...5
+  irb(main):013:0> range.include?(5)
+  => false
+  irb(main):014:0> range.include?(4.9)
+  => true
+
+  irb(main):001:0> (1..5).class
+  => Range
+  irb(main):002:0> range = 1..5
+  => 1..5
+  irb(main):010:0> range.include?(5)
+  => true
+  irb(main):011:0> range.include?(6)
+  => false
