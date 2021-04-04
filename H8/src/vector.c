@@ -1,11 +1,11 @@
-#include "define.h"
+﻿#include "define.h"
 
 extern void start( void );
 
 
 /*
-* ���荞�݃x�N�^�̐ݒ�
-* �����J�E�X�N���v�g�̒�`�ɂ��A�擪�Ԓn�ɔz�u�����B
+* 割り込みベクタの設定
+* リンカ・スクリプトの定義により、先頭番地に配置される。
 */
 void ( *vector[] ) ( void ) = {
     start, NULL, NULL, NULL, NULL, NULL, NULL, NULL,

@@ -4,7 +4,7 @@
 #define NULL                    ((void *) 0)
 #define SERIAL_DEFAULT_DEVICE   (1)
 
-// ƒrƒbƒg•ŒÅ’è‚Ì®”Œ^
+// ãƒ“ãƒƒãƒˆå¹…å›ºå®šã®æ•´æ•°å‹
 typedef unsigned char  UINT8;
 typedef unsigned short UINT16;
 typedef unsigned long  UINT32;

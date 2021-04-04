@@ -4,18 +4,18 @@
 
 int main( void )
 {
-    // ƒVƒŠƒAƒ‹ƒfƒoƒCƒX‰Šú‰»
+    // ã‚·ãƒªã‚¢ãƒ«ãƒ‡ãƒã‚¤ã‚¹åˆæœŸåŒ–
     serial_init( SERIAL_DEFAULT_DEVICE );
 
     puts( "Hello World\n" );
 
-    // ”’lo—Í
+    // æ•°å€¤å‡ºåŠ›
     putxval( 0x10, 0 );
     puts( "\n" );
     putxval( 0xffff, 0 );
     puts( "\n" );
 
-    // –³ŒÀƒ‹[ƒv‚Å’â~
+    // ç„¡é™ãƒ«ãƒ¼ãƒ—ã§åœæ­¢
     while( 1 )
     {
         ;
